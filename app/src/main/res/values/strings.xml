@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">OPBatterySaver</string>
+    <string name="apply">Apply</string>
+    <string name="insert_battery_value">Insert Battery Value</string>
+    <string name="outOfRange">Battery Percentage is out of range</string>
+    <string name="useBatterySavingTrigger">Trigger on energy saving</string>
+    <string name="valueSetSuccessfully">The value has been set successfully</string>
+    <string name="noPermissionTitle">Missing Permissions</string>
+    <string name="noPermissionMessage">This application does not have the WRITE_SECURE_SETTINGS flag, please read the repository for more information</string>
+</resources>
