@@ -72,7 +72,7 @@ object Utils {
     }
 
     fun showDialog(ctx: Context, title: Int, message: Int, unit: (DialogInterface, Int) -> Unit) {
-        AlertDialog.Builder(ctx, R.style.alertDialog).run {
+        AlertDialog.Builder(ctx).run {
             setTitle(title)
             setMessage(message)
             create()
