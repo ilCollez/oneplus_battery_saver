@@ -1,5 +1,4 @@
-# <center>OnePlus Battery Saver</center>
-<center><img src="https://i.imgur.com/t9Hw0Z7.png" style="width:350px"/></center>
+# OnePlus Battery Saver
 
 
 ## Introduction
@@ -57,7 +56,7 @@ I would like to thank 2 awesome guys that helped me a lot with this project
 - Add in-app auto updater
 - Support more languages
 
-## Supported Languages
+### Supported Languages
 - English
 - Italian
 - German
