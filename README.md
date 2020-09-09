@@ -1,5 +1,4 @@
-# <center>OnePlus Battery Saver</center>
-<center><img src="https://i.imgur.com/t9Hw0Z7.png" style="width:350px"/></center>
+# OnePlus Battery Saver
 
 
 ## Introduction
