@@ -8,4 +8,9 @@
         <item name="android:windowBackground">@color/backGround</item>
     </style>
 
+    <style name="alertDialog">
+        <item name="android:textColor">@color/textBox</item>
+        <item name="android:colorBackground">@color/backGround</item>
+    </style>
+
 </resources>

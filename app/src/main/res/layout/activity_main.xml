@@ -2,19 +2,43 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/containerMain">
+    tools:context=".MainActivity">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/toggleService"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/enabled"
+        android:textColor="@color/textBox"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchSaving"
+        app:layout_constraintEnd_toEndOf="@+id/switchSaving"
+        app:layout_constraintStart_toStartOf="@+id/switchSaving" />
+
+    <TextView
+        android:id="@+id/percentageTrigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        tools:text="@string/currentBatteryTrigger" />
 
     <EditText
-        android:textColor="@color/textBox"
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="96dp"
-        android:inputType="number"
+        android:autofillHints="25"
         android:hint="@string/insert_battery_value"
+        android:inputType="number"
+        android:textColor="@color/textBox"
         android:textColorHint="@color/textBox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,21 +48,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:text="@string/apply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        android:text="@string/apply" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <com.google.android.material.switchmaterial.SwitchMaterial
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:id="@+id/switchSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/useBatterySavingTrigger"
         android:textColor="@color/textBox"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/percentageTrigger"
         app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        android:layout_marginBottom="16dp" />
+        app:layout_constraintStart_toStartOf="@+id/editText" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

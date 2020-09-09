@@ -1,7 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">OnePlus Battery Saver</string>
+    <string name="insert_battery_value">"Insert Battery Value         "</string>
     <string name="apply">Apply</string>
-    <string name="insert_battery_value">Insert Battery Value</string>
     <string name="outOfRange">Battery Percentage is out of range</string>
     <string name="useBatterySavingTrigger">Trigger on energy saving</string>
     <string name="valueSetSuccessfully">The value has been set successfully</string>

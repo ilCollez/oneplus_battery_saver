@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insert_battery_value">" Insérer la valeur de la batterie"</string>
+    <string name="apply">" Appliquer"</string>
+    <string name="outOfRange">" Le pourcentage de batterie est hors de portée"</string>
+    <string name="useBatterySavingTrigger">" Déclenchement sur l'économie d'énergie"</string>
+    <string name="valueSetSuccessfully">" La valeur a été définie avec succès"</string>
+    <string name="noPermissionTitle">Permissions manquantes</string>
+    <string name="noPermissionMessage">" Cette application n'a pas l'indicateur WRITE_SECURE_SETTINGS, veuillez lire le référentiel pour plus d'informations"</string>
+    <string name="currentBatteryTrigger">" Pourcentage actuel défini: %s"</string>
+    <string name="noValuePassed">" Vous devez insérer une valeur!"</string>
+    <string name="refreshRateChangedTitle">" Taux de rafraîchissement modifié"</string>
+    <string name="refreshRateChangedMessage">Le taux de rafraîchissement a été réglé sur: %sHz</string>
+    <string name="notSupportedTitle">" Dispositif non pris en charge"</string>
+    <string name="notSupportedMessage">" Cet appareil n'est pas pris en charge, consultez le référentiel pour une liste des modèles pris en charge"</string>
+    <string name="enabled">Activé</string>
+    <string name="disabled">" Désactivé"</string>
+    <string name="batteryOptMessage">" Cette application nécessite que vous désactiviez l'optimisation automatique de la batterie pour que cette application fonctionne"</string>
+    <string name="batteryOptTitle">" Désactiver l'optimisation de la batterie"</string>
+</resources>

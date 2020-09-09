@@ -7,4 +7,14 @@
     <string name="valueSetSuccessfully">Il valore è stato impostato correttamente</string>
     <string name="noPermissionTitle">Permessi Mancanti</string>
     <string name="noPermissionMessage">Quest\'applicazione non ha il permesso WRITE_SECURE_SETTINGS, per maggiori informazioni, leggere la repository</string>
+    <string name="currentBatteryTrigger">Percentuale settata: %s</string>
+    <string name="noValuePassed">Devi inserire un valore!</string>
+    <string name="refreshRateChangedTitle">Il Refresh rate è stato modifcato</string>
+    <string name="refreshRateChangedMessage">Il Refresh Rate è stato impostato a: %sHz</string>
+    <string name="notSupportedTitle">Telefono non supportato</string>
+    <string name="notSupportedMessage">Questo telefono non è supportato, controlla la repository per una lista di modelli supportati</string>
+    <string name="disabled">Disabilitato</string>
+    <string name="enabled">Abilitato</string>
+    <string name="batteryOptMessage">Quest\'app per funzionare richiede che tu disattivi l\'ottimizzazione automatica della batteria per quest\'app</string>
+    <string name="batteryOptTitle">Disattiva ottimizzazione della batteria</string>
 </resources>

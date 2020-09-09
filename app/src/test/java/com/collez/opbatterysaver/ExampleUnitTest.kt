@@ -1,4 +1,4 @@
-package com.example.opbatterysaver
+package com.collez.opbatterysaver
 
 import org.junit.Test
 
