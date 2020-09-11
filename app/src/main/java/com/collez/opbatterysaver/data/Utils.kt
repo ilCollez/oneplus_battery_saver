@@ -2,21 +2,24 @@ package com.collez.opbatterysaver.data
 
 
 import android.Manifest
-import android.app.AlertDialog
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.content.DialogInterface
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.net.Uri
 import android.os.Build
 import android.os.PowerManager
 import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
+import com.collez.opbatterysaver.BuildConfig
 import com.collez.opbatterysaver.R
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 object Utils {
@@ -72,7 +75,7 @@ object Utils {
     }
 
     fun showDialog(ctx: Context, title: Int, message: Int, unit: (DialogInterface, Int) -> Unit) {
-        AlertDialog.Builder(ctx).run {
+        MaterialAlertDialogBuilder(ctx).run {
             setTitle(title)
             setMessage(message)
             create()
@@ -106,5 +109,24 @@ object Utils {
             Spannable.SPAN_EXCLUSIVE_INCLUSIVE)
 
         return spannable
+    }
+
+    fun isAppOutDated(buildNumber: Int): Boolean = BuildConfig.VERSION_CODE < buildNumber
+
+    fun openExternalLink (ctx: Context, url: String) {
+        CustomTabsIntent.Builder()
+            .build()
+            .launchUrl(ctx, Uri.parse(url))
+    }
+
+    fun showNoServiceDialog(ctx: Context, posCb: (DialogInterface, Int) -> Unit) {
+        MaterialAlertDialogBuilder(ctx).run {
+            setTitle(R.string.noServiceAvailableTitle)
+            setMessage(R.string.noServiceAvailableMessage)
+            create()
+            setPositiveButton(android.R.string.ok, posCb)
+            setNegativeButton(android.R.string.cancel) {_, _ -> }
+            show()
+        }
     }
 }

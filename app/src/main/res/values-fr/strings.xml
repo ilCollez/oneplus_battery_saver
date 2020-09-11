@@ -17,4 +17,8 @@
     <string name="disabled">" Désactivé"</string>
     <string name="batteryOptMessage">" Cette application nécessite que vous désactiviez l'optimisation automatique de la batterie pour que cette application fonctionne"</string>
     <string name="batteryOptTitle">" Désactiver l'optimisation de la batterie"</string>
+    <string name="updateRequiredTitle">" Nouvelle Version Disponible"</string>
+    <string name="updateRequiredMessage">" Une nouvelle version est disponible pour l'application, appuyez sur OK pour être redirigé vers la page de téléchargemen"</string>
+    <string name="noServiceAvailableMessage">" L'application ne peut pas se connecter aux services distants, souhaitez-vous réessayer?"</string>
+    <string name="noServiceAvailableTitle">" Aucun service disponible"</string>
 </resources>

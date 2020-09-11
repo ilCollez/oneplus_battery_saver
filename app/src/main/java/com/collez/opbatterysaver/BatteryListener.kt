@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.BatteryManager
 import android.os.PowerManager
 import com.collez.opbatterysaver.data.*
+import com.collez.opbatterysaver.models.RefreshRate
 import org.koin.core.KoinComponent
 import org.koin.core.inject
 

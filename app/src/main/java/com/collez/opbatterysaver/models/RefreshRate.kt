@@ -1,4 +1,4 @@
-package com.collez.opbatterysaver.data
+package com.collez.opbatterysaver.models
 
 enum class RefreshRate (val num: Int) {
     Hz60(1),

@@ -17,4 +17,8 @@
     <string name="disabled">Disabled</string>
     <string name="batteryOptMessage">This app requires you to turn off automatic battery optimization for this app to work</string>
     <string name="batteryOptTitle">Disable battery optimization</string>
+    <string name="updateRequiredTitle">New Version Available</string>
+    <string name="updateRequiredMessage">A new version is available for the application, press OK to be redirected to the download page</string>
+    <string name="noServiceAvailableMessage">The application cannot connect to the remote services, do you want to try again?</string>
+    <string name="noServiceAvailableTitle">No Service Available</string>
 </resources>

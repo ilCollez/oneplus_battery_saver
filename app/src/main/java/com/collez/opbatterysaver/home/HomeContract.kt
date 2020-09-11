@@ -9,6 +9,7 @@ interface HomeContract {
         fun setBatteryValue(value: Int)
         fun showNoPermissionDialog()
         fun showNotSupportedDialog()
+        fun showUpdateDialog(url: String)
         fun askBatteryOptimizationDialog()
         fun setButtons(serviceEnabled: Boolean, triggerOnSaving: Boolean, batteryPercentage: Int)
     }
@@ -19,6 +20,7 @@ interface HomeContract {
         fun toggleSavingListener(context: Context, listener: BatteryListener, isChecked: Boolean)
         fun checkPermissions()
         fun syncViewWithSettings()
+        fun checkForUpdate()
     }
 
 }

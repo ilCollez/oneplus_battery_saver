@@ -17,4 +17,8 @@
     <string name="disabled">" Behindert"</string>
     <string name="batteryOptMessage">" Für diese App müssen Sie die automatische Batterieoptimierung deaktivieren, damit diese App funktioniert"</string>
     <string name="batteryOptTitle">" Deaktivieren Sie die Batterieoptimierung"</string>
+    <string name="updateRequiredTitle">" Neue Version Verfügbar"</string>
+    <string name="updateRequiredMessage">" Für die Anwendung ist eine neue Version verfügbar. Drücken Sie OK, um zur Download-Seite weitergeleitet zu werden"</string>
+    <string name="noServiceAvailableMessage">" Die Anwendung kann keine Verbindung zu den Remotediensten herstellen. Möchten Sie es erneut versuchen?"</string>
+    <string name="noServiceAvailableTitle">" Kein Service verfügbar"</string>
 </resources>

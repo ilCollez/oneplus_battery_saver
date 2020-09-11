@@ -1,7 +1,7 @@
 <h1 align="center">OnePlus Battery Saver</h1>
 
 <p align="center">
-  <img widht="256" height="256" src="https://i.imgur.com/t9Hw0Z7.png">
+  <img width="256" height="256" src="https://i.imgur.com/t9Hw0Z7.png">
 </p>
 
 
@@ -26,6 +26,7 @@ This is my first project in Android, and i would like to thank [Samuele794](http
 - Changes the refresh rate when energy saver is enabled
 - You can set a battery percentage for triggering the refresh rate change
 - Notifies you when the refresh rate changes
+- In-App Auto Updater
 
 ## Installation
 1) Install it on your phone (first check the [Supported Devices](#supported-devices) section)
@@ -57,8 +58,11 @@ I would like to thank 2 awesome guys that helped me a lot with this project
 
 ### Todos
 - Add support for OnePlus 8 Pro
-- Add in-app auto updater
+- ~~Add in-app auto updater~~ | **Added in 1.0.1**
 - Support more languages
+
+### Changelogs
+Click [here](changelogs.md) for see the changelogs
 
 ### Supported Languages
 - English

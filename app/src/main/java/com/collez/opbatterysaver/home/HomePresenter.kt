@@ -4,12 +4,15 @@ import android.content.Context
 import com.collez.opbatterysaver.BatteryListener
 import com.collez.opbatterysaver.data.Settings
 import com.collez.opbatterysaver.data.Utils
+import com.collez.opbatterysaver.firebase.RemoteConfig
+import com.collez.opbatterysaver.models.Release
 import org.koin.core.KoinComponent
 import org.koin.core.inject
 
 
 class HomePresenter(private val view: HomeContract.View, private val ctx: Context) : HomeContract.Presenter, KoinComponent {
     private val settings: Settings by inject()
+    private val remoteConfig: RemoteConfig by inject()
 
     override fun setBatteryPercentage(percentage: Int) {
         settings.batteryPercentage = percentage
@@ -56,5 +59,11 @@ class HomePresenter(private val view: HomeContract.View, private val ctx: Contex
             settings.triggerOnSaving,
             settings.batteryPercentage
         )
+    }
+
+    override fun checkForUpdate() {
+        val release: Release = remoteConfig.latestRelease
+        if (Utils.isAppOutDated(release.buildNumber))
+            view.showUpdateDialog(release.downloadUrl)
     }
 }

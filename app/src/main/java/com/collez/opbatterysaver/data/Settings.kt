@@ -1,6 +1,7 @@
 package com.collez.opbatterysaver.data
 
 import android.content.Context
+import com.collez.opbatterysaver.models.RefreshRate
 
 class Settings(private val context: Context) {
 

@@ -11,6 +11,7 @@ import android.provider.Settings
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import com.collez.opbatterysaver.data.Utils
+import com.collez.opbatterysaver.firebase.RemoteConfig
 import com.collez.opbatterysaver.home.HomeContract
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,6 +21,7 @@ import org.koin.core.parameter.parametersOf
 
 class MainActivity : AppCompatActivity(), HomeContract.View {
     private val presenter: HomeContract.Presenter by inject { parametersOf(this) }
+    private val remoteConfig: RemoteConfig by inject()
     private val batteryListener: BatteryListener = BatteryListener()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +30,10 @@ class MainActivity : AppCompatActivity(), HomeContract.View {
 
         presenter.checkPermissions()
         presenter.syncViewWithSettings()
+
+        remoteConfig.start(this) {
+            presenter.checkForUpdate()
+        }
 
         val filter = IntentFilter(Intent.ACTION_BATTERY_CHANGED)
         filter.addAction(PowerManager.ACTION_POWER_SAVE_MODE_CHANGED)
@@ -77,6 +83,14 @@ class MainActivity : AppCompatActivity(), HomeContract.View {
             R.string.notSupportedTitle,
             R.string.notSupportedMessage
         ) { _, _ -> finish() }
+    }
+
+    override fun showUpdateDialog(url: String) {
+        Utils.showDialog(
+            this,
+            R.string.updateRequiredTitle,
+            R.string.updateRequiredMessage
+        ) { _, _ -> Utils.openExternalLink(this, url) }
     }
 
     @SuppressLint("BatteryLife")
