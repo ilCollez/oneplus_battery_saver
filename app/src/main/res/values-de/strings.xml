@@ -21,4 +21,5 @@
     <string name="updateRequiredMessage">" Für die Anwendung ist eine neue Version verfügbar. Drücken Sie OK, um zur Download-Seite weitergeleitet zu werden"</string>
     <string name="noServiceAvailableMessage">" Die Anwendung kann keine Verbindung zu den Remotediensten herstellen. Möchten Sie es erneut versuchen?"</string>
     <string name="noServiceAvailableTitle">" Kein Service verfügbar"</string>
+    <string name="showRepo">" Repository anzeigen"</string>
 </resources>

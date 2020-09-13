@@ -21,4 +21,5 @@
     <string name="updateRequiredMessage">" Une nouvelle version est disponible pour l'application, appuyez sur OK pour être redirigé vers la page de téléchargemen"</string>
     <string name="noServiceAvailableMessage">" L'application ne peut pas se connecter aux services distants, souhaitez-vous réessayer?"</string>
     <string name="noServiceAvailableTitle">" Aucun service disponible"</string>
+    <string name="showRepo">" Afficher le référentiel"</string>
 </resources>

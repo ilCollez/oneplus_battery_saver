@@ -72,6 +72,7 @@ class MainActivity : AppCompatActivity(), HomeContract.View {
     override fun showNoPermissionDialog() {
         Utils.showDialog(
             this,
+            true,
             R.string.noPermissionTitle,
             R.string.noPermissionMessage
         ) { _, _ -> finish() }
@@ -80,6 +81,7 @@ class MainActivity : AppCompatActivity(), HomeContract.View {
     override fun showNotSupportedDialog() {
         Utils.showDialog(
             this,
+            true,
             R.string.notSupportedTitle,
             R.string.notSupportedMessage
         ) { _, _ -> finish() }
@@ -88,6 +90,7 @@ class MainActivity : AppCompatActivity(), HomeContract.View {
     override fun showUpdateDialog(url: String) {
         Utils.showDialog(
             this,
+            false,
             R.string.updateRequiredTitle,
             R.string.updateRequiredMessage
         ) { _, _ -> Utils.openExternalLink(this, url) }
@@ -97,6 +100,7 @@ class MainActivity : AppCompatActivity(), HomeContract.View {
     override fun askBatteryOptimizationDialog() {
         Utils.showDialog(
             this,
+            false,
             R.string.batteryOptTitle,
             R.string.batteryOptMessage
         ) {_, _ -> startActivity(

@@ -2,6 +2,7 @@ package com.collez.opbatterysaver.data
 
 
 import android.Manifest
+import android.app.Activity
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
@@ -74,12 +75,17 @@ object Utils {
         return spannable
     }
 
-    fun showDialog(ctx: Context, title: Int, message: Int, unit: (DialogInterface, Int) -> Unit) {
+    fun showDialog(ctx: Context, showRepoBtn: Boolean, title: Int, message: Int, unit: (DialogInterface, Int) -> Unit) {
         MaterialAlertDialogBuilder(ctx).run {
             setTitle(title)
             setMessage(message)
             create()
             setPositiveButton(context.getString(android.R.string.ok), unit)
+            if (showRepoBtn)
+                setNeutralButton(R.string.showRepo) { _, _ ->
+                    openExternalLink(ctx, "https://github.com/ilCollez/oneplus_battery_saver")
+                    (ctx as Activity).finish()
+                }
             show()
         }
     }

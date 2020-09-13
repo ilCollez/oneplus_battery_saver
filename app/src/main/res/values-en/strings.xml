@@ -21,4 +21,5 @@
     <string name="updateRequiredMessage">A new version is available for the application, press OK to be redirected to the download page</string>
     <string name="noServiceAvailableMessage">The application cannot connect to the remote services, do you want to try again?</string>
     <string name="noServiceAvailableTitle">No Service Available</string>
+    <string name="showRepo">Show Repository</string>
 </resources>
