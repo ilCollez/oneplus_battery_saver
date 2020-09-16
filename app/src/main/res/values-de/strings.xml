@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="apply">" Anwenden"</string>
-    <string name="insert_battery_value">" Batteriewert einfügen"</string>
-    <string name="outOfRange">" Der Batterieprozentsatz liegt außerhalb des Bereichs"</string>
-    <string name="useBatterySavingTrigger">" Auslöser für Energieeinsparung"</string>
-    <string name="valueSetSuccessfully">" Der Wert wurde erfolgreich eingestellt"</string>
-    <string name="noPermissionTitle">" Fehlende Berechtigungen"</string>
-    <string name="noPermissionMessage">" Diese Anwendung verfügt nicht über das Flag WRITE_SECURE_SETTINGS. Weitere Informationen finden Sie im Repository"</string>
-    <string name="currentBatteryTrigger">" Aktueller Prozentsatz eingestellt: %s"</string>
-    <string name="noValuePassed">" Sie müssen einen Wert einfügen!"</string>
-    <string name="refreshRateChangedTitle">" Aktualisierungsrate geändert"</string>
-    <string name="refreshRateChangedMessage">" Die Aktualisierungsrate wurde auf eingestellt: %sHz"</string>
-    <string name="notSupportedTitle">" Gerät nicht unterstützt"</string>
-    <string name="notSupportedMessage">" Dieses Gerät wird nicht unterstützt. Überprüfen Sie das Repository auf eine Liste der unterstützten Modelle"</string>
-    <string name="enabled">" Aktiviert"</string>
-    <string name="disabled">" Behindert"</string>
-    <string name="batteryOptMessage">" Für diese App müssen Sie die automatische Batterieoptimierung deaktivieren, damit diese App funktioniert"</string>
-    <string name="batteryOptTitle">" Deaktivieren Sie die Batterieoptimierung"</string>
-    <string name="updateRequiredTitle">" Neue Version Verfügbar"</string>
-    <string name="updateRequiredMessage">" Für die Anwendung ist eine neue Version verfügbar. Drücken Sie OK, um zur Download-Seite weitergeleitet zu werden"</string>
-    <string name="noServiceAvailableMessage">" Die Anwendung kann keine Verbindung zu den Remotediensten herstellen. Möchten Sie es erneut versuchen?"</string>
-    <string name="noServiceAvailableTitle">" Kein Service verfügbar"</string>
-    <string name="showRepo">" Repository anzeigen"</string>
+    <string name="apply">Anwenden</string>
+    <string name="insert_battery_value">Batteriewert einfügen</string>
+    <string name="outOfRange">Der Batterieprozentsatz liegt außerhalb des Bereichs</string>
+    <string name="useBatterySavingTrigger">Auslöser für Energieeinsparung</string>
+    <string name="valueSetSuccessfully">Der Wert wurde erfolgreich eingestellt</string>
+    <string name="noPermissionTitle">Fehlende Berechtigungen</string>
+    <string name="noPermissionMessage">Diese Anwendung verfügt nicht über das Flag WRITE_SECURE_SETTINGS. Weitere Informationen finden Sie im Repository</string>
+    <string name="currentBatteryTrigger">Aktueller Prozentsatz eingestellt: %s</string>
+    <string name="noValuePassed">Sie müssen einen Wert einfügen!</string>
+    <string name="refreshRateChangedTitle">Aktualisierungsrate geändert</string>
+    <string name="refreshRateChangedMessage">Die Aktualisierungsrate wurde auf eingestellt: %sHz</string>
+    <string name="notSupportedTitle">Gerät nicht unterstützt</string>
+    <string name="notSupportedMessage">Dieses Gerät wird nicht unterstützt. Überprüfen Sie das Repository auf eine Liste der unterstützten Modelle</string>
+    <string name="enabled">Aktiviert</string>
+    <string name="disabled">Behindert</string>
+    <string name="batteryOptMessage">Für diese App müssen Sie die automatische Batterieoptimierung deaktivieren, damit diese App funktioniert</string>
+    <string name="batteryOptTitle">Deaktivieren Sie die Batterieoptimierung</string>
+    <string name="updateRequiredTitle">Neue Version Verfügbar</string>
+    <string name="updateRequiredMessage">Für die Anwendung ist eine neue Version verfügbar. Drücken Sie OK, um zur Download-Seite weitergeleitet zu werden</string>
+    <string name="noServiceAvailableMessage">Die Anwendung kann keine Verbindung zu den Remotediensten herstellen. Möchten Sie es erneut versuchen?</string>
+    <string name="noServiceAvailableTitle">Kein Service verfügbar</string>
+    <string name="showRepo">Repository anzeigen</string>
 </resources>

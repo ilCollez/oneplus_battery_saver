@@ -18,7 +18,7 @@
     <string name="batteryOptMessage">Quest\'app per funzionare richiede che tu disattivi l\'ottimizzazione automatica della batteria per quest\'app</string>
     <string name="batteryOptTitle">Disattiva ottimizzazione della batteria</string>
     <string name="updateRequiredTitle">Nuova Versione Disponibile</string>
-    <string name="updateRequiredMessage">" È disponibile una nuova versione dell'applicazione, premere OK per essere reindirizzati alla pagina di download"</string>
+    <string name="updateRequiredMessage">È disponibile una nuova versione dell\'applicazione, premere OK per essere reindirizzati alla pagina di download</string>
     <string name="noServiceAvailableMessage">L\'applicazione non riesce a connettersi ai servizi remoti, vuoi riprovare?</string>
     <string name="noServiceAvailableTitle">Nessun Servizio Disponibile</string>
     <string name="showRepo">Mostra Repository</string>
