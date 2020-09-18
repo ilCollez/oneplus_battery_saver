@@ -71,7 +71,7 @@ Click [here](changelogs.md) for see the changelogs
 - French
 
 ### Contacts
-You can contact me on Discord, my name is `Collez#9445`
+You can contact me on Discord, my name is `Collez#4514`
 
 ### Disclaimer
 **I do not take responsibility for any damage caused by my application, use it at your own risk**
